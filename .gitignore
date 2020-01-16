@@ -1,0 +1,14 @@
+#pyc files
+./src/*.pyc
+./callbacks/*.pyc
+./tabs/*.pyc
+
+#__pycaches__
+./src/__pycache__/
+./__pycache__/
+./callbacks/__pycache__/
+./tabs/__pycache__/
+
+#Temp folder
+./src/temp/
+./temp/

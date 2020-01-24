@@ -19,10 +19,11 @@ class Data_Handler(object):
     def __init__(self):
         pass
 
+
+
     def load_embedding(self, fname):
         '''Function to load and parse the pre-trained word embedding for GloVe.
         '''
-        
         #Load content to a list.
         with open(fname) as f: 
             lines = f.readlines()
@@ -32,7 +33,6 @@ class Data_Handler(object):
         for line in lines:
             word_coef = line.split()
             embedding[word_coef[0]] = np.asarray(word_coef[1:], dtype='float32')
-       
         return embedding
         
     # create a weight matrix for the Embedding layer from a loaded embedding

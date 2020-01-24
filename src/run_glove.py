@@ -87,7 +87,8 @@ class Glove_Experiment(object):
         """Create word "tokens". General actions performed are:
         Filter: non-alphabetic words, punctuation, line breaks are removed.
         fit_on_texts: Creates a 'ranked' vocabulary based on word frequency.
-        Does not: Lemmatize the data.
+        Does not: Lemmatize the data -- not needed for neural Glovel models.
+        Does not: remove stopwords -- not needed for neural Glovel models.
         """
         self.tokenizer = Tokenizer()
         self.tokenizer.fit_on_texts(self.Train_X)

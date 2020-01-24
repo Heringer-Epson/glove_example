@@ -19,8 +19,6 @@ class Data_Handler(object):
     def __init__(self):
         pass
 
-
-
     def load_embedding(self, fname):
         '''Function to load and parse the pre-trained word embedding for GloVe.
         '''
